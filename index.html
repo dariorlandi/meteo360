@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+
+	<title>meteo360°</title>
+	<meta name="author" content="Dario Orlandi" href="http://dariorlandi.com">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<script src="js/jQuery.js" rel="text/javascript"></script>
+	<script src="js/script.js" rel="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	
+	<div class="page-content">
+		<header>
+		    <img id="logo" src="img/meteo360.png" alt="logo">
+		</header>
+
+		<div class="search-bar animate__animated animate__fadeInDown" >
+			<form id="request" method="POST">
+              <input type="text" id="city" name="city" autocomplete="city" class="search-box" id="request" placeholder="Inserisci una città" title="Compila questo campo.">
+	        </form>
+		</div>
+
+		<main>
+			<div class="main-result">
+				<a class="title" id="city-name"></a>
+
+				<a class="sub-title" id="country"></a>
+
+				<a class="info" id="city-id"></a>
+
+				<div class="instant-info">
+					<a class="info"><img class="icon" id="state-icon"></a>
+					<br>
+					<a class="info" id="state"></a>
+					<br>
+					<a id="temp"></a>
+                    <br>
+					<a class="info" id="temp-max"></a>
+					<a class="info">/</a>
+					<a class="info" id="temp-min"></a>
+				
+
+				<div id="main-measures">
+					
+					<table>
+						
+						<tr>
+							<td>
+								<a class="info">Umidità</a>
+							</td>
+							
+							<td>
+								<a class="info" id="humidity"></a>
+							</td>
+						</tr>
+
+
+						<tr>
+							<td>
+								<a class="info">Pressione Atm.</a>
+							</td>
+							
+							<td>
+								<a class="info" id="pressure"></a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a class="info">Visibilità</a>
+							</td>
+							
+							<td>
+								<a class="info" id="visibility"></a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a class="info">Vento</a>
+							</td>
+							
+							<td>
+								<a class="info" id="deg"></a>
+						        <a class="info">;</a>
+								<a class="info" id="speed"></a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a class="info">Alba</a>
+							</td>
+							
+							<td>
+								<a class="info" id="sunrise"></a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<a class="info">Tramonto</a>
+							</td>
+							
+							<td>
+								<a class="info" id="sunset"></a>
+							</td>
+						</tr>
+					</table>
+					<br>
+				</div>
+			</div>
+			</div>
+		</main>
+	</div>
+
+	<button class="modal-btn">modal</button>
+
+	<div class="modal-bg">
+		<div class="modal">
+			  <img src="img/windsock.png" alt="">
+			  <p>La tua ricerca non ha prodotto alcun risultato!</p>
+		      <button class="modal-close">OK</button>
+        </div>
+	</div>
+
+	<div class="footer">
+		
+		<div class="row">
+
+			<div class="col-1-of-2">
+                <a href="#" class="footer__link">FACEBOOK</a>
+				<a href="#" class="footer__link">LINKED-IN</a>
+			</div>
+
+			<div class="col-1-of-2">
+         		&copy; Dario Orlandi 2020
+			</div>
+
+		</div>
+	</div>
+
+
+</body>
+</html>
